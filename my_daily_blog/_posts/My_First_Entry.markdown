@@ -3,6 +3,7 @@
 layout: post
 title: "My First Blog Post!"
 date: 2017-12-20
+categories: General
 ---
 
 Hello! My name is Aniruth Kasthuri. This is my very first blog post ever!
