@@ -5,7 +5,7 @@ date: 2017-12-20
 categories: General
 ---
 
-![Cowboys_Score](/img/Cowboys_Raiders/Cowboys_Score.jpg){:class="img-responsive"}
+![Cowboys_Score](/img/Cowboys_Raiders/Cowboys_Score.tiff){:class="img-responsive"}
 
 ### Pre-Game
 
