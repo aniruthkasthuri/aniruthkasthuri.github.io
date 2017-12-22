@@ -1,6 +1,7 @@
 ---
-# You don't need to edit this file, it's empty on purpose.
-# Edit theme's home layout instead if you wanna make some changes
-# See: https://jekyllrb.com/docs/themes/#overriding-theme-defaults
-layout: home
+layout: page
+title: The World of an Edgy Guy Blog
+permalink: /Blog/
 ---
+
+<h1> The World of an Edgy Guy </h1>
