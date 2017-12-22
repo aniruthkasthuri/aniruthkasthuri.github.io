@@ -7,7 +7,7 @@ categories: General
 
 In order to make my blogs interesting, I wanted to also educate people on certain topics. Today's special topic is Federalist 10. 
 
-[a link](http://www.constitution.org/fed/federa10.htm)
+[Link to the Federalist 10](http://www.constitution.org/fed/federa10.htm)
 
 ### Background Information of Federalist Papers
 
