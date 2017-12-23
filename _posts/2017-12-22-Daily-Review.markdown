@@ -64,4 +64,14 @@ In the greater picture, legislation may begin in either chamber of Congress. In 
 
 ### How is cloture invoked?
 
+#### Requirements
+
+* At least 16 Senators need to sign a cloture motion. 
+   - “We, the undersigned Senators, in accordance with the provisions of Rule XXII of the Standing Rules of the Senate, hereby move to bring to a close the debate upon [the matter in question].”
+* To present cloture motion, a Senator may interrupt another Senator.
+* The cloture motion must sit for one whole Senate Legislative Day.
+* The Senate votes on the cloture motion on the first hour of the second day and after a quorum call has established the presence of a quorum.
+* The presiding officer presents the cloture motion to the Senate for a rollcall vote at the time required by Rule XXII even if there has been other business on the Senate floor.
+* For most cloture cases, 3/5 of the Senate need to approve it. If the bill affects the Senate's standing rules, then the approval percentage goes to 2/3 of the Senate.
+     - [Link to the Senate's standing rules](https://www.rules.senate.gov/rules-of-the-senate) 
  
