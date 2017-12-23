@@ -2,6 +2,36 @@ body {
     margin: 60px auto;
     width: 70%;
 }
+.github{
+    width: 20%;
+    float: left;
+    padding: 15px;
+}
+
+.linkedin{
+    width: 20%;
+    float: left;
+    padding: 15px;
+}
+
+.resume{
+    width: 20%;
+    float: left;
+    padding: 15px;
+}
+
+.mail{
+    width: 20%;
+    float: left;
+    padding: 15px;
+}
+
+.info{
+    width: 20%;
+    float: left;
+    padding: 15px;
+}
+
 nav ul, footer ul {
     font-family:'Helvetica', 'Arial', 'Sans-Serif';
     padding: 0px;
