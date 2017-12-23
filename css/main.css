@@ -1,11 +1,13 @@
 body {
     margin: 60px auto;
     width: 70%;
+    color: red;
 }
 .github{
     width: 20%;
     float: left;
     padding: 15px;
+    
 }
 
 .linkedin{
