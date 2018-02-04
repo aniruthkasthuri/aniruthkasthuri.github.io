@@ -1,50 +1,58 @@
-<!DOCTYPE html>
-	<html>
-		<head>
-			<title>{{ page.title }}</title>
-			<!-- link to main stylesheet -->
-			<link rel="stylesheet" type="text/css" href="/css/main.css">
-			<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-			
-		</head>
-		<body>
-			<nav>
-	    		<ul>
-	        		<li><a href="/">Home</a></li>
-		        	<li><a href="/about">About</a></li>
-	        		<li><a href="/Experience">Experience</a></li>
-	        		<li><a href="/blog">Blog</a></li>
-	    		</ul>
-			</nav>
-			<div class="container">
-			
-			{{ content }}
-			
-			</div><!-- /.container -->
-			<footer>
-	    		<ul>
-			<div class="centered row">
-  				<div class="fourteen wide mobile eight wide tablet six wide computer column"> 
-  					<div class="ui four column grid">
-	  					<div class="column">	
-						    <div class="linkedin">
-						    <a href="https://www.linkedin.com/in/aniruthkasthuri"><i class="fa fa-linkedin-square" style="font-size:48px;padding-left: 80px;"></i></a>       
-						    </div>
-						    <div class="github">
-						       <a href="https://github.com/aniruthkasthuri"><i class="fa fa-github" style="font-size:48px;padding-left: 80px;"></i></a>
-						    </div>
-						 
-						    <div class="resume">
-							<a href="Aniruth Kasthuri Resume.pdf"><i class="fa fa-file-text-o" style="font-size:48px;padding-left: 80px;"></i></a> 
-						    </div>
-						    <div class="mail">
-							<i class="fa fa-envelope" style="font-size:48px;padding: 10px;"></i>
-						    </div>
-							</div>
-						</div>
-					</div>
-				</div>
-			</ul>
-			</footer>
-		</body>
-	</html>
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title > Untitled Document</title>    
+
+<style>
+video{
+  min-width:100%;
+  min-height:100%;
+  width: auto;
+  height: auto;
+  z-index:-1;
+}
+
+</style>
+<title> Aniruth Sandana Kasthuri </title>
+        <link rel="stylesheet" href="styling.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+
+<body>
+     <div id="mySidenav" class="sidenav">
+              <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+              <a href="#">About</a>
+              <a href="#">Blog</a>
+              <a href="#">Projects</a>
+              <a href="#">Contact</a>
+              <a href="https://github.com/aniruthkasthuri"><i class="fa fa-github" style="font-size:48px;padding-left: 80px;padding-top: 50px"></i></a>
+              <a href="https://www.linkedin.com/in/aniruthkasthuri"><i class="fa fa-linkedin-square" style="font-size:48px;padding-left: 80px;"></i></a> 
+              <a href="Aniruth Kasthuri Resume.pdf"><i class="fa fa-file-text-o" style="font-size:48px;padding-left: 80px;"></i></a> 
+              <i class="fa fa-envelope" style="font-size:48px; color:#fff;padding-left: 110px;"></i>
+              
+        </div>
+
+        <span style="font-size:30px;cursor:pointer;color:#fff;" onclick="openNav()">&#9776;</span>
+
+        <script>
+            function openNav() {
+                 document.getElementById("mySidenav").style.width = "250px";
+            }
+            function closeNav() {
+                document.getElementById("mySidenav").style.width = "0";
+            }
+        </script>
+        
+        <img src="bkg.png">
+        <h1> Aniruth Sandana Kasthuri</h1>
+ 
+        
+        <div class = "background-wrap">
+            <video id="video-bg-elem" autoplay loop muted>
+		     <source src="Background.mp4" type="video/mp4">
+		     Your browser does not support the video tag.
+	       </video>
+        </div>
+</body>
+</html>
