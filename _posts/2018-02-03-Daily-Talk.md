@@ -16,9 +16,9 @@ Question: To what extent can companies limit your first amendment right of free 
 
 Sources
 
-http://www.uscourts.gov/educational-resources/educational-activities/facts-and-case-summary-texas-v-johnson
-https://sf.eater.com/2017/8/14/16144078/top-dog-cole-white-charlottesville-berkeley
-http://www.spigglelaw.com/employment-blog/can-fired-political-activities-outside-work/
-https://www.archives.gov/education/lessons/civil-rights-act
+[Link to Texas v Johnson](http://www.uscourts.gov/educational-resources/educational-activities/facts-and-case-summary-texas-v-johnson)
+[Link to Top Dop Employee Fired](https://sf.eater.com/2017/8/14/16144078/top-dog-cole-white-charlottesville-berkeley)
+[Link to Political Activities Outside of Work](http://www.spigglelaw.com/employment-blog/can-fired-political-activities-outside-work/)
+[Link to Civil Rights Act](https://www.archives.gov/education/lessons/civil-rights-act)
 
 
