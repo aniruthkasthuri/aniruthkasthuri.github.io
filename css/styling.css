@@ -145,3 +145,36 @@ h1{
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
 }
+.ability-title{
+    color: gray;
+    padding-right: 50px;
+}
+h3{
+    color: #25C9AD;
+}
+.white-background{
+    background-color: #fffff0;
+    padding-left: 150px;
+    padding-right: 150px;
+
+}
+p3{
+    padding-right: 30px;
+}
+h4{
+    text-align: center;
+    color: #009999;
+    size: 200%;
+}
+h5{
+    color: #009999;
+}
+h6{
+    padding-left: 23%;
+    padding-right: 23%;
+    text-align: center;
+    color:gray;
+}
+hr{
+    border-top: 1px solid gray;
+}
