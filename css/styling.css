@@ -13,6 +13,8 @@ img {
     height: 66%;
     float:center;
     display: block;
+    -moz-padding-start: 300px;
+    -webkit-padding-start: 280px;
 }
 
 .content {
