@@ -7,9 +7,9 @@ img {
     border-radius: 50px;
     margin-left: auto;
     margin-right: auto;
-    width: 250px;
-    height: 300px;
-    padding: 30px;
+    width: 17%;
+    height: 17%;
+    float:right;
     display: block;
 }
 
