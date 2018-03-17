@@ -4,21 +4,17 @@
     font-family: 'Open Sans', sans-serif;
 }
 img {
-    border-radius: 50px;
-    margin-left: auto;
-    margin-right: auto;
-    width: 66%;
-    padding-left: 280px;
-    padding-bottom: 100px;
-    height: 66%;
-    float:center;
+    position:relative;
     display: block;
-    -moz-padding-start: 300px;
-    -webkit-padding-start: 280px;
+
+    max-width: 40%;
+    min-width: 40%;
+    margin-left: 40%;
+    
 }
 
 .content {
-    position: absolute;
+    position: relative;
     width: 100%;
     min-height: 100%;
     z-index: 1000;
@@ -29,17 +25,17 @@ img {
     text-transform: uppercase;
     font-weight: 300;
     color: #fff;
-    padding-top: 15%;
-    margin-bottom: 10px;
 }
 body{
-    height: 400%;
-    margin: 0;
-    background-attachment: fixed;
+    margin-left: auto;
+    margin-right: auto;
+    background-attachment: relative;
     background-image: url("https://newevolutiondesigns.com/images/freebies/city-wallpaper-18.jpg");
+    background-size: 140%;
+    background-repeat: no-repeat;
 }
 .background-wrap {
-    position: fixed;
+    position: relative;
     z-index: -1000; 
     width: 100%;
     height: 100%;
@@ -87,22 +83,9 @@ a { color: #fff; }
     color: #fff;
 }
 
-
-
-h1{ 
-    font-family: 'Oswald', sans-serif;
-    text-align: center;
-    font-size: 65px;
-    text-transform: uppercase;
-    font-weight: 300;
-    color: #6d5b5b;
-    padding-top: 2px;
-    margin-bottom: 10px;
-}
-
 .sidenav {
     height: 100%;
-    width: 0;
+    min-width: 0;
     position: fixed;
     z-index: 1;
     top: 0;
@@ -172,41 +155,60 @@ h5{
 }
 h6{
     text-align: center;
-    color:#6d5b5b;
+    color:#998e8e;
+    max-width: 100%;
+    height: 5vh;
+    
+    
 }
+
 hr{
     border-top: 1px solid gray;
 }
 .columns1 {
     float: left;
-    width: 02%;
+    min-width: 02%;
     padding-left: 23%;
     height: 100px;
     text-align: right;
 }
 .columns {
     float: left;
-    width: 10%;
+    min-width: 10%;
     padding:50%;
     height: 100px; 
     text-align: right;
 }
 
+/* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
+ @media screen and (min-width: 800px) {
+  .typewriter h1 {
+     font-size: 36px;
+  }
+  h6 {
+     font-size: 1px;
+  }
+}
 
 .typewriter h1 {
+    font-size: 200%;
+    max-width: 100%;
+    max-height: 100%;
+    
+    
+    position:relative;
     font-family: 'Oswald', sans-serif;
     text-align: center;
-    font-size: 65px;
     text-transform: uppercase;
     font-weight: 300;
     color: #6d5b5b;
-    padding-top: 2px;
-    margin-bottom: 10px;
+    /*padding-top: 2px;
+    margin-bottom: 10px;*/
     
   overflow: hidden; /* Ensures the content is not revealed until the animation */
   border-right: .15em solid orange; /* The typwriter cursor */
@@ -254,90 +256,12 @@ hr{
 
 .centered {
   position: absolute;
-  top: 50%;
+  top: 37%;
   left: 50%;
   transform: translate(-50%, -50%);
 }
 
-
-/* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) {
-  /* Styles */
-}
-
-/* Smartphones (landscape) ----------- */
-@media only screen 
-and (min-width : 321px) {
-  /* Styles */
-}
-
-/* Smartphones (portrait) ----------- */
-@media only screen 
-and (max-width : 320px) {
-  /* Styles */
-}
-
-/* iPads (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) {
-  /* Styles */
-}
-
-/* iPads (landscape) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : landscape) {
-  /* Styles */
-}
-
-/* iPads (portrait) ----------- */
-@media only screen 
-and (min-device-width : 768px) 
-and (max-device-width : 1024px) 
-and (orientation : portrait) {
-  /* Styles */
-}
-
-/* Desktops and laptops ----------- */
-@media only screen 
-and (min-width : 1224px) {
-  /* Styles */
-}
-
-/* Large screens ----------- */
-@media only screen 
-and (min-width : 1824px) {
-  /* Styles */
-}
-
-/* iPhone 4 - 5s ----------- */
-@media
-only screen and (-webkit-min-device-pixel-ratio : 1.5),
-only screen and (min-device-pixel-ratio : 1.5) {
-  /* Styles */
-}
-
-/* iPhone 6 ----------- */
-@media
-only screen and (max-device-width: 667px) 
-only screen and (-webkit-device-pixel-ratio: 2) {
-  /* Styles */
-}
-
-/* iPhone 6+ ----------- */
-@media
-only screen and (min-device-width : 414px) 
-only screen and (-webkit-device-pixel-ratio: 3) {
-  /*** You've spent way too much on a phone ***/
-}
-
-/* Samsung Galaxy S7 Edge ----------- */
-@media only screen
-and (-webkit-min-device-pixel-ratio: 3)
-and (min-resolution: 192dpi)and max-width:640px) {
-  background-image: url('https://i.ytimg.com/vi/zhBxfNm3rJE/maxresdefault.jpg');
+h7{
+    text-align: center;
+    color:#dbcece;
 }
