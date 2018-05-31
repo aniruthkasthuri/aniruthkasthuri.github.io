@@ -69,15 +69,7 @@ body{
     padding-top: 15%;
     margin-bottom: 10px;
 }
-.fa {
-   padding-top: 0%;
-  position: relative;
-  top: 37%;
-  left: 50%;
-  transform: translate(-50%, -50%); 
-    
-    
-    
+.fa {    
   padding: 30px;
   font-size: 30px;
   width: 30px;
@@ -94,8 +86,7 @@ body{
 
 .fa-linkedin-square {
   background: #007bb5;
-  color: green;
-    margin-right: 30%;
+  color: white;
 }
 
 .fa-github {
