@@ -14,11 +14,11 @@ img {
     margin-top: 30%;   
 }
 .centered {
-padding-top: 20%;
+/*padding-top: 20%;
   position: relative;
   top: 37%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);*/
 }
 .content {
     position: relative;
