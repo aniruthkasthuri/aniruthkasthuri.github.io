@@ -39,6 +39,17 @@ body{
     background-size: 140%;
     background-repeat: no-repeat;
 }
+@media screen and (min-width: 500px) {
+   body {
+      width:420px;
+   }
+}
+
+@media screen and (min-width: 800px) {
+   body {
+      width:720px;
+   }
+}
 .background-wrap {
     position: relative;
     z-index: -1000; 
