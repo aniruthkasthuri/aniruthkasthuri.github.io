@@ -69,7 +69,6 @@ body{
 }
 
 .fa-linkedin {
-    margin-left: 70px;
   background: #007bb5;
   color: white;
 }
@@ -80,6 +79,7 @@ body{
 }
 
 .fa-facebook {
+    margin-left: 70px;
   background: #3B5998;
   color: white;
 }
