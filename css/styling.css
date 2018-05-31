@@ -9,10 +9,15 @@ img {
 
     max-width: 30%;
     min-width: 30%;
-    margin-left: 40%;
-    
+    margin-left: 40%;   
 }
-
+.centered {
+padding-top: 20%;
+  position: relative;
+  top: 37%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
 .content {
     position: relative;
     width: 100%;
@@ -76,7 +81,7 @@ body{
     opacity: 0.8;
 }
 
-.fa-linkedin {
+.fa-linkedin-square {
   background: #007bb5;
   color: white;
 }
@@ -92,81 +97,18 @@ body{
   color: white;
 }
 
+.fa-file-text-o {
+   margin-left: 300px;
+  background: #3B5998;
+  color: white;
+}
+
+
 .fa-twitter {
   background: #55ACEE;
   color: white;
 }
 
-.sidenav {
-    height: 100%;
-    min-width: 0;
-    position: fixed;
-    z-index: 1;
-    top: 0;
-    left: 0;
-    background-color: #2C2C2C;
-    overflow-x: hidden;
-    transition: 0.5s;
-    padding-top: 60px;
-}
-
-.sidenav a {
-    padding: 8px 8px 8px 32px;
-    text-decoration: none;
-    font-size: 25px;
-    color: a;
-    display: block;
-    transition: 0.3s;
-}
-
-.sidenav a:hover {
-    color: a;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
-}
-
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
-.glyphicon-star {
-  font-size: 10px;
-  color: #25C9AD;
-  size: 10%;
-  float:right;
-}
-
-h3{
-    color: #25C9AD;
-}
-.ability-title{
-    color: gray;
-    padding-right: 50px;
-}
-.white-background{
-    background-color: #fffff0;
-    padding-left: 150px;
-    padding-right: 150px;
-
-}
-p3{
-    padding-left: 160px;
-}
-h4{
-    text-align: center;
-    color: #009999;
-    size: 200%;
-}
-h5{
-    color: #009999;
-}
 h6{
     text-align: center;
     color:#998e8e;
@@ -176,30 +118,6 @@ h6{
     
 }
 
-hr{
-    border-top: 1px solid gray;
-}
-.columns1 {
-    float: left;
-    min-width: 02%;
-    padding-left: 23%;
-    height: 100px;
-    text-align: right;
-}
-.columns {
-    float: left;
-    min-width: 10%;
-    padding:50%;
-    height: 100px; 
-    text-align: right;
-}
-
-/* Clear floats after the columns */
-.row:after {
-    content: "";
-    display: table;
-    clear: both;
-}
  @media screen and (min-width: 800px) {
   .typewriter h1 {
      font-size: 36px;
@@ -268,15 +186,3 @@ hr{
   }
 }
 
-.centered {
-padding-top: 20%;
-  position: relative;
-  top: 37%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-h7{
-    text-align: center;
-    color:#dbcece;
-}
