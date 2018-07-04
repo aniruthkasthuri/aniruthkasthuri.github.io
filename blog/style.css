@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css?family=Markazi+Text|Open+Sans');
+
+/*
+---------------General Styles */
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-image: url(subwaynew.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    text-align: center;
+    font-weight: 400;
+}
+
+/*
+---------------Naming Styles */
+h1{
+  position: absolute;
+  width: 92%;
+  font-size: 200%;
+  color: #654321;
+  text-align: center;
+  font-family: 'Oswald', sans-serif;
+}
+
+/*
+---------------Image Styles */
+img{
+  text-align: left;
+  float: left;
+  width:8%;
+  height:8%;
+  padding-left: 5%;
+  margin-top: 1.2%;
+}
+
+/****
+---------------Header Styles 
+Tutorial based on https://www.youtube.com/watch?v=FEmysQARWFU ****/
+.container {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  padding-left: 20%;
+}
+
+header{
+  margin-top: 0;
+  background: #e8e4c2;
+}
+
+header::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+nav {
+  float: right;
+  width: 100%;
+  height: 100%;
+  text-align: right;
+  margin-right: 10%;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li{
+  display: inline-block;
+  margin-left: 7%;
+  padding-top: 2.7%;
+  padding-bottom: 2.7%;
+  position: relative;
+}
+
+nav a{
+  color: #654321;
+  text-decoration:  none;
+  text-transform: uppercase;
+}
+
+nav a:hover{
+  color: #9b9774;
+}
+nav a::before{
+  content: '';
+  display: block;
+  height: 6%;
+  background-color: #444;
+  
+  position: absolute;
+  top: 0;
+  width:0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 97%;
+}
+
+
+
+.container li:hover .sub-menu {
+	z-index:1;
+	opacity:1;
+}
+
+
+.sub-menu {
+  float:right;
+  margin-left: -200%;
+  width:320%;
+	position:absolute;
+	top:100%;
+	left:0;
+	z-index:-1;
+	opacity:0;
+	transition:opacity linear 0.15s;
+	background: #fae5c2;
+}
+
+.sub-menu li {
+	display:block;
+	font-size:16px;
+}
+
+.sub-menu li a {
+	padding:2% 3%;
+	display:block;
+}
+
+.sub-menu li a:hover, .sub-menu .current-item a {
+	background:#3e3436;
+
+}
