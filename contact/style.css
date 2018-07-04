@@ -1,0 +1,24 @@
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    background-image: url(./Dallas.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    text-align: center;
+    font-weight: 400;
+}
+
+
+img{
+  text-align: left;
+  float: left;
+  width:8%;
+  height:8%;
+  padding-left: 5%;
+  margin-top: 1.2%;
+}
