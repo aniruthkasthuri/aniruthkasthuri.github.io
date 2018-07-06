@@ -12,6 +12,16 @@
     <style type="text/css">
         
     </style>
+      <script type="text/javascript">
+     function changeImg(imgNumber) {
+        var images = ['lets.jpg', 'ENJO.jpg', 'GRAT.jpg', 'JOY.jpg', 'OK.jpg', 'ADV.jpg','bright.jpg','CRET.jpg','SPAR.jpg','EAS.jpg','VOICE.png'];
+        var newImgNumber =Math.floor(Math.random()*images.length);
+        document.body.style.background = 'url('+images[newImgNumber]+')';
+        document.body.style.backgroundRepeat = 'no-repeat';
+        document.body.style.backgroundSize = 'cover';
+   };
+   window.onload=changeImg;
+  </script>
     <body>
         <header>
             <div class="container">
