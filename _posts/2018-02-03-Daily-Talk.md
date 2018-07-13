@@ -2,7 +2,8 @@
 layout: post
 title: "Companies and First Amendment Limitations"
 date: 2018-02-03
-categories: General
+categories: 
+    - "politics"
 ---
 
 ### Question: To what extent can companies limit your first amendment right of free speech and consequently fire you?
