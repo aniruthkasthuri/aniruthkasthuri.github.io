@@ -1,4 +1,4 @@
 ---
 tag: politics
-permalink: "/blog/category/politics"
+permalink: "https://aniruthkasthuri.github.io/category/politics"
 ---
