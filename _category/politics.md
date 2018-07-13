@@ -1,4 +1,4 @@
 ---
 tag: politics
-permalink: "/category/politics"
+permalink: "/blog/category/politics"
 ---
