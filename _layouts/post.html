@@ -2,15 +2,6 @@
 layout: default
 ---
 <h1>{{ page.title }}</h1>
-<p class="meta">{{ page.date | date_to_string }}</p>
-<style>
-  body{
-    background-image: url("http://static.tumblr.com/c9401245aeb5d46be3385b89fdd5e8b1/9cut3mb/4W9mfc908/tumblr_static_tumblr-barn.jpg");
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
-  </style>
-<h1>{{ page.title }}</h1>
 <div class="tags">
     {% assign sortedCategories = page.categories | sort %}
     {% for category in sortedCategories %}
@@ -19,6 +10,15 @@ layout: default
         </span>
     {% endfor %}
 </div>
+<p class="meta">{{ page.date | date_to_string }}</p>
+<style>
+  body{
+    background-image: url("http://static.tumblr.com/c9401245aeb5d46be3385b89fdd5e8b1/9cut3mb/4W9mfc908/tumblr_static_tumblr-barn.jpg");
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+  </style>
+
 <div class="post">
   {{ content }}
 </div>
