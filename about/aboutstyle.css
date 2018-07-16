@@ -1,0 +1,436 @@
+a, .sec-contact .btn {
+  transition: all .25s;
+}
+
+/*=Typography=*/
+html {
+  font-size: 16px;
+}
+
+body {
+  font-family: 'Open sans', sans-serif;
+  font-weight: 300;
+}
+
+.navbar a,
+.sec-about p {
+  text-align: center;
+}
+
+.navbar a {
+  font-size: 16px;
+}
+
+.navbar .fa-external-link {
+  font-size: 10px;
+}
+
+.main-heading {
+  font-family: 'Open sans', sans-serif;
+  font-weight: 300;
+  text-align: center;
+  letter-spacing: 9px;
+  text-transform: uppercase;
+}
+
+.container > h1 {
+  font-weight: 300;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+p {
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+.sec-about a {
+  text-decoration: underline;
+}
+
+.sec-services h2,
+.sec-services p {
+  font-weight: 300;
+  text-align: center;
+}
+
+.sec-testimonials p {
+  font-style: italic;
+}
+
+.sec-contact .btn {
+  text-transform: uppercase;
+}
+
+.soc-media-ul a {
+  text-align: center;
+  text-decoration: none;
+}
+
+/*=Base=*/
+section {
+  padding: 5em 0;
+}
+
+footer {
+  padding: 3em 0;
+}
+
+@media screen and (max-width: 768px) and (min-width: 485px) {
+  form {
+    max-width: 70%;
+  }
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+hr {
+  margin-bottom: 3em;
+  width: 7%;
+}
+
+/*=Layout=*/
+.sec-folio .row {
+  margin-bottom: 3em;
+}
+
+.sec-folio img {
+  max-width: 100%;
+}
+
+/*Header*/
+.navbar-default {
+  background: #fff;
+}
+
+.navbar .fa-external-link {
+  vertical-align: top;
+}
+
+.navbar-default .navbar-nav > li > a:hover,
+.navbar-default .navbar-nav > li > a:focus {
+  color: #ad0000;
+}
+
+.navbar-default .navbar-nav > li > a:active {
+  color: #940000;
+}
+
+/*Main*/
+.sec-main {
+  position: relative;
+  height: 560px;
+  background: url(https://source.unsplash.com/kVf7VRgg4p8/1920x1080) no-repeat center center;
+  background-size: cover;
+}
+.sec-main:after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+}
+
+.main-heading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  z-index: 2;
+  padding: 0;
+  margin: auto;
+  height: 40px;
+  color: #fff;
+}
+
+/*About*/
+.sec-about a {
+  color: #000;
+}
+.sec-about a:hover, .sec-about a:focus {
+  color: #ad0000;
+}
+
+/*Services*/
+.sec-services {
+  background: #f9f9f9;
+}
+
+.sec-services i {
+  display: block;
+  margin: auto;
+  width: 45px;
+}
+
+.sec-services .fa-paint-brush {
+  width: 64px;
+}
+
+.sec-services .fa-code {
+  width: 68px;
+}
+
+.sec-services h2 {
+  margin: 1em 0;
+}
+
+/*Testimonials*/
+.sec-testimonials {
+  background: #f9f9f9;
+}
+
+/*Contact*/
+.sec-contact .form-control:focus {
+  border-color: #ad0000;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(173, 0, 0, 0.6);
+}
+
+.sec-contact .btn {
+  padding: .5rem 1.75rem;
+  background: #000;
+  font-size: .95rem;
+  color: #fff;
+}
+.sec-contact .btn:hover, .sec-contact .btn:focus {
+  background: #ad0000;
+  border-color: #7a0000;
+}
+
+/*Footer*/
+footer {
+  background: #000;
+}
+
+.soc-media-ul {
+  display: flex;
+  justify-content: center;
+}
+
+.soc-media-ul li:not(:first-child) a {
+  margin-left: 1em;
+}
+
+.soc-media-ul a {
+  display: block;
+  padding: 10px;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 50%;
+  border: 2px solid;
+}
+.soc-media-ul a:hover, .soc-media-ul a:focus {
+  color: #ad0000;
+}
+
+
+/*
+---------------General Styles */
+*{
+    font-family: 'Montserrat', sans-serif;
+}
+body{
+    /*background-image: url(./lets.jpg);*/
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    margin-top: 0%;
+    margin-left: 0%;
+    margin-right: 0%;
+    text-align: center;
+    font-weight: 400;
+    max-width: 100%;
+}
+
+
+
+
+.col-sm-3 img {
+  width: 100px;
+  height: 50px;
+  margin-left: 35%;
+  margin-bottom: 20%;
+}
+
+/*
+---------------Image Styles */
+img{
+  text-align: left;
+  float: left;
+  width:8%;
+  height:8%;
+  padding-left: 5%;
+  margin-top: 1.2%;
+}
+
+/****
+---------------Header Styles 
+Tutorial based on https://www.youtube.com/watch?v=FEmysQARWFU ****/
+.container {
+  width: 70%;
+  height: 100%;
+  margin: 0 auto;
+  padding-left: 20%;
+}
+
+header{
+  margin-top: 0;
+  background: #e8e4c2;
+}
+
+header::after{
+  content: '';
+  display: table;
+  clear: both;
+}
+nav {
+  float: right;
+  width: 100%;
+  height: 100%;
+  text-align: right;
+  margin-right: 10%;
+}
+
+nav ul{
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+nav li{
+  display: inline-block;
+  margin-left: 7%;
+  padding-top: 2.7%;
+  padding-bottom: 2.7%;
+  position: relative;
+}
+
+nav a{
+  color: #654321;
+  text-decoration:  none;
+  text-transform: uppercase;
+}
+
+nav a:hover{
+  color: #9b9774;
+}
+nav a::before{
+  content: '';
+  display: block;
+  height: 6%;
+  background-color: #444;
+  
+  position: absolute;
+  top: 0;
+  width:0%;
+  transition: all ease-in-out 250ms;
+}
+
+nav a:hover::before {
+  width: 97%;
+}
+
+
+
+.container li:hover .sub-menu {
+	z-index:1;
+	opacity:1;
+}
+
+
+.sub-menu {
+  float:right;
+  margin-left: -200%;
+  width:320%;
+	position:absolute;
+	top:100%;
+	left:0;
+	z-index:-1;
+	opacity:0;
+	transition:opacity linear 0.15s;
+	background: #fae5c2;
+}
+
+.sub-menu li {
+	display:block;
+	font-size:16px;
+}
+
+.sub-menu li a {
+	padding:2% 3%;
+	display:block;
+}
+
+.sub-menu li a:hover, .sub-menu .current-item a {
+	background:#3e3436;
+
+}
+
+.u-absoluteCenter {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+}
+.u-flexCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.u-offscreen {
+  position: absolute;
+  left: -999em;
+}
+.globe {
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
+  box-sizing: border-box;
+  width: 25vmin;
+  height: 25vmin;
+  border: 1vmin solid #aaaaaa;
+  border-radius: 50%;
+  background-color: #aaaaaa;
+  background-image: url('https://s3.amazonaws.com/dreg-pen/wikipedia_map.svg');
+  background-repeat: repeat no-repeat;
+  background-position: 0;
+  background-size: cover;
+  -webkit-animation: spin 10s linear infinite;
+          animation: spin 10s linear infinite;
+}
+@-webkit-keyframes spin {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 225%;
+  }
+}
+@keyframes spin {
+  from {
+    background-position: 0;
+  }
+  to {
+    background-position: 225%;
+  }
+}
+
+
+.col-sm-3 img{
+  width: 40%;
+  margin-bottom: 10%;
+  margin-left: 34%;
+  padding-left:0;
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
