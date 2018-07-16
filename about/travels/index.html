@@ -1,1 +1,328 @@
-a
+<!DOCTYPE HTML>
+<head> 
+<meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+         <link href="https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300|Oswald" rel="stylesheet">
+        <title> Aniruth Kasthuri's Website</title>
+<link rel="stylesheet" href="./projectstyler.css"> 
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/babel-core/5.8.34/browser.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/react/15.6.1/react-dom.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/classnames/2.2.5/index.min.js"></script>
+
+<script src="//code.jquery.com/jquery-3.1.1.min.js"></script>
+<script src="scrip.js"></script>
+<script type="text/babel">
+class CitiesSlider extends React.Component {
+  constructor(props) {
+    super(props);
+    
+    this.IMAGE_PARTS = 4;
+    
+    this.changeTO = null;
+    this.AUTOCHANGE_TIME = 4000;
+    
+    this.state = { activeSlide: -1, prevSlide: -1, sliderReady: false };
+  }
+  
+  componentWillUnmount() {
+    window.clearTimeout(this.changeTO);
+  }
+  
+  componentDidMount() {
+    this.runAutochangeTO();
+    setTimeout(() => {
+      this.setState({ activeSlide: 0, sliderReady: true });
+    }, 0);
+  }
+  
+  runAutochangeTO() {
+    this.changeTO = setTimeout(() => {
+      this.changeSlides(1);
+      this.runAutochangeTO();
+    }, this.AUTOCHANGE_TIME);
+  }
+  
+  changeSlides(change) {
+    window.clearTimeout(this.changeTO);
+    const { length } = this.props.slides;
+    const prevSlide = this.state.activeSlide;
+    let activeSlide = prevSlide + change;
+    if (activeSlide < 0) activeSlide = length - 1;
+    if (activeSlide >= length) activeSlide = 0;
+    this.setState({ activeSlide, prevSlide });
+  }
+  
+  render() {
+    const { activeSlide, prevSlide, sliderReady } = this.state;
+    return (
+      <div className={classNames('slider', { 's--ready': sliderReady })}>
+        <p className="slider__top-heading">Places I have Travelled To</p>
+        <div className="slider__slides">
+          {this.props.slides.map((slide, index) => (
+            <div
+              className={classNames('slider__slide', { 's--active': activeSlide === index, 's--prev': prevSlide === index  })}
+              key={slide.city}
+              >
+              <div className="slider__slide-content">
+                <h3 className="slider__slide-subheading">{slide.country || slide.city}</h3>
+                <h2 className="slider__slide-heading">
+                  {slide.city.split('').map(l => <span>{l}</span>)}
+                </h2>
+                <a href="https://aniruthkasthuri.github.io"><p className="slider__slide-readmore">My Experience - Blog Posts</p></a>
+              </div>
+              <div className="slider__slide-parts">
+                {[...Array(this.IMAGE_PARTS).fill()].map((x, i) => (
+                  <div className="slider__slide-part" key={i}>
+                    <div className="slider__slide-part-inner" style={{ backgroundImage: `url(${slide.img})` }} />
+                  </div>
+                ))}
+              </div>
+            </div>
+          ))}
+        </div>
+        <div className="slider__control" onClick={() => this.changeSlides(-1)} />
+        <div className="slider__control slider__control--right" onClick={() => this.changeSlides(1)} />
+      </div>
+    );
+  }
+}
+
+const slides = [
+  {
+    city: 'Agra',
+    country: 'India',
+    img: 'https://www.orientrailjourneys.com/blog/wp-content/uploads/2018/01/Taj-Mahal.jpg',
+  },
+  {
+    city: 'Amarillo',
+    country: 'United States',
+    img: 'https://upload.wikimedia.org/wikipedia/commons/9/95/Cadillac_Ranch.jpg',
+  },
+  {
+    city: 'Amritsar',
+    country: 'India',
+    img: 'http://cpreecenvis.nic.in/WriteReadData/UserFiles/image/Sacred%20Sites/Amritsar.jpg',
+  },
+    {
+    city: 'Austin',
+    country: 'United States',
+    img: 'http://topworkplaces.statesman.com/wp-content/uploads/2017/10/Ideabar-Austin-image_twp_top-employers.jpg',
+  }, 
+   {
+    city: 'Big\xa0Bend\xa0&\xa0El\xa0Paso',
+    country: 'United States',
+    img: 'https://farm8.staticflickr.com/7085/7215860942_8a44e3ab8f_b.jpg',
+  },
+  {
+    city: 'Boston',
+    country: 'United States',
+    img: 'https://res.cloudinary.com/simpleview/image/upload/c_fill,f_auto,h_878,q_75,w_1903/v1/clients/boston/BostonAerails_KyleKlein_KKP12001_5c3e779e-3e93-4634-839c-b1ac087f7ece.jpg',
+  },
+  {
+    city: 'Branson',
+    country: 'United States',
+    img: 'https://vacationidea.com/pix/img25Hy8R/destinations/best-things-to-do-in-branson-missouri_f.jpg',
+  },
+    {
+    city: 'Cape\xa0Cod',
+    country: 'United States',
+    img: 'https://www.50-best.com/images/beach_wallpapers/cape_cod_beach.jpg',
+  },
+  {
+    city: 'Cayman\xa0Islands',
+    country: 'Cayman\xa0Islands',
+    img: 'https://thewallpaper.co/wp-content/uploads/2016/03/cayman-island-wallpaper-hd-widescreen-desktop-background-pictures-free-desktop-images-abstract-colorful-1920x1200-768x480.jpg',
+  },
+  {
+    city: 'Chennai',
+    country: 'India',
+    img: 'http://www.stockholmresilience.org/images/18.1dfe66d715be4b1e53d613/1494419875841/metrochennai-src.jpg'
+  },
+  {
+    city: 'Cincinnati',
+    country: 'United States',
+    img: 'http://www.cincinnatichamber.com/images/default-source/cincinnati-chamber/homepage-sliders/slide_pendleton.jpg?Status=Master&sfvrsn=4ecb9cb6_2',
+  },
+  {
+    city: 'Cleveland',
+    country: 'United States',
+    img: 'http://images.nymag.com/travel/weekend-escapes/20170524-cleveland-1-general-560.jpg',
+  },
+  {
+    city: 'Colorado Springs',
+    country: 'United States',
+    img: 'http://www.wallpapers13.com/wp-content/uploads/2016/04/Colorado-Springs-Garden-of-the-Gods-Desktop-Wallpaper-HD-8479-915x515.jpg',
+  },
+   {
+    city: 'Costa\xa0Maya',
+    country: 'Mexico',
+    img: 'https://www.visitmexico.com/sites/default/files/styles/extralarge/public/field/image/2017/02/quintana-roo_destinos-principales_costa-maya_01.jpg?itok=M81w5Pix',
+  },
+  {
+    city: 'Cozumel',
+    country: 'Mexico',
+    img: 'https://cdn.mtlblog.com/uploads/333122_6ad5e550330325a95d47806dfdf3c8e753d9d34c.png_facebook.png',
+  },
+  {
+    city: 'Dallas',
+    country: 'United States',
+    img: 'https://www.collegefashion.net/.image/t_share/MTUzODU4MDQyNDgyNDAzMDcw/18378516600_ea81c75ba8_k.jpg',
+  },
+  {
+    city: 'Denver',
+    country: 'United States',
+    img: 'http://paperlief.com/images/denver-winter-night-wallpaper-2.jpg',
+  },
+  {
+    city: 'Dubai',
+    country: 'United Arab Emirates',
+    img: 'https://fm.cnbc.com/applications/cnbc.com/resources/img/editorial/2018/02/06/104992135-ThumbnailDubai_WEB.1910x1000.jpg',
+  },
+  {
+    city: 'Fort\xa0Lauderdale',
+    country: 'United States',
+    img: 'https://cdn.wallpaper.com/main/2017/01/00_aerial.jpg',
+  },
+  {
+    city: 'Hawaii',
+    country: 'United States',
+    img: 'https://assets3.thrillist.com/v1/image/2751762/size/tmg-article_default_mobile.jpg',
+  },
+  {
+    city: 'Houston',
+    country: 'United States',
+    img: 'https://wallpaperstudio10.com/static/wpdb/wallpapers/1920x1080/171502.jpg',
+  },
+  {
+    city: 'Jaipur',
+    country: 'India',
+    img: 'https://www.ahlanlive.com/sites/default/files/styles/artcle_big_picture/public/images/2017/10/11/shutterstock_404130370_9187090.jpg?itok=O8UaZYP6',
+  },
+  {
+    city: 'Key\xa0West',
+    country: 'United States',
+    img: 'http://getwallpapers.com/wallpaper/full/7/5/2/615716.jpg',
+  },
+  {
+    city: 'Kochi\xa0&\xa0Alappuzha',
+    country: 'India',
+    img: 'http://www.calistachateaux.com/blog/wp-content/uploads/2018/03/alleppey-2-1-1170x630.jpg',
+  },
+  {
+    city: 'London',
+    country: 'United Kingdom',
+    img: 'https://www.telegraph.co.uk/content/dam/video_previews/x/5/x5cgi0ode66q6vuxezqmehmexwer6bt-xlarge.jpg',
+  },
+   {
+    city: 'Los\xa0Angeles',
+    country: 'United States',
+    img: 'https://www.visittheusa.com/sites/default/files/styles/hero_m_1300x700/public/images/hero_media_image/2017-01/Getty_515070156_EDITORIALONLY_LosAngeles_HollywoodBlvd_Web72DPI_0.jpg?itok=07A4oA_a',
+  },
+  {
+    city: 'Montego\xa0Bay\xa0&\xa0Ocho\xa0Rios',
+    country: 'Jamaica',
+    img: 'http://www.playasycosta.com/images/ocho-rios2.jpg',
+  },
+   {
+    city: 'Myrtle\xa0Beach',
+    country: 'United States',
+    img: 'https://www.myrtlebeach.com/wp-content/uploads/2015/03/DowntownCrowdedBeach-MyrtleBeach-Boardwalk.jpg',
+  },
+  {
+    city: 'Nantucket',
+    country: 'United States',
+    img: 'http://www.islandinstitute.org/sites/default/files/styles/waterfront_hero/public/Groening_Nantucket-4.jpg?itok=5G4Zbtx0',
+  },
+  {
+    city: 'Nassau\xa0&\xa0Freeport',
+    country: 'The Bahamas',
+    img: 'https://cdn.suwalls.com/wallpapers/world/nassau-41607-1920x1200.jpg',
+  },
+  {
+    city: 'Newport',
+    country: 'United States',
+    img: 'http://revelwallpapers.net/d/323446365A487269354C715874586558304746387A4E6938747336426E673D3D/newportri_1366x768.jpg',
+  },
+  {
+    city: 'New\xa0Delhi',
+    country: 'India',
+    img: 'https://www.tedbaker.com/blog/uk/wp-content/uploads/2018/02/New-Delhi-Hero.jpg',
+  },
+  {
+    city: 'New\xa0Orleans',
+    country: 'United States',
+    img: 'https://i.ytimg.com/vi/24A4t-1h1zU/maxresdefault.jpg',
+  },
+  {
+    city: 'New\xa0York\xa0City',
+    country: 'United States',
+    img: 'https://static.posters.cz/image/1300/poster/new-york-freedom-tower-manhattan-i24101.jpg',
+  },
+  {
+    city: 'Orangestad',
+    country: 'Aruba',
+    img: 'https://52perfectdays.com/wp-content/uploads/2017/02/Aruba-Vacation.jpg',
+  },
+  {
+    city: 'Orlando',
+    country: 'United States',
+    img: 'https://dzbc.org/wp-content/uploads/data/2018/2/19/image-PIC-MCH074912.jpg',
+  },
+   {
+    city: 'Paris',
+    country: 'France',
+    img: 'https://cdn-image.travelandleisure.com/sites/default/files/styles/1600x1000/public/1444253482/DG2015-paris.jpg?itok=XH81cBH9',
+  },
+  {
+    city: 'Philadelphia',
+    country: 'United States',
+    img: 'https://newevolutiondesigns.com/images/freebies/philadelphia-downtown.jpg',
+  },
+   {
+    city: 'Philmont',
+    country: 'United States',
+    img: 'https://mowryjournal.files.wordpress.com/2012/08/tooth-of-time-2.jpg',
+  },
+  {
+    city: 'Providence',
+    country: 'United States',
+    img: 'https://static1.squarespace.com/static/56a3e2a21a5203313c2fb83a/t/56aa8dd3f8baf30983a876ec/1454018005596/Providence-Summer-08-067.jpg?format=1500w',
+  },
+   {
+    city: 'San\xa0Antonio',
+    country: 'United States',
+    img: 'https://media1.fdncms.com/sacurrent/imager/u/original/10851155/300.jpg',
+  },
+   {
+    city: 'San\xa0Diego',
+    country: 'United States',
+    img: 'https://www.sandiego.org/-/media/images/sdta-site/articles/about-sd/1233x860/sdta-articles-11917-1230x860-0000s-0000-about-sd.jpg?bc=white&h=500&w=700&c=1',
+  },
+  {
+    city: 'San\xa0Francisco',
+    country: 'United States',
+    img: 'https://lonelyplanetimages.imgix.net/a/g/hi/t/9cf024dfd5c0bcb2b17f4785340145ea-san-francisco.jpg?sharp=10&vib=20&w=1200',
+  },
+  {
+    city: 'Washington\xa0D.C.',
+    country: 'United States',
+    img: 'https://www.tripsavvy.com/thmb/If7DQOslS1PgsgagCvm6PGrtwRY=/960x0/filters:no_upscale():max_bytes(150000):strip_icc()/capitol-building-170402241-58ddb7bf5f9b58468374c174.jpg',
+  },
+  {
+    city: 'Zurich,\xa0Geneva,\xa0Bern',
+    country: 'Switzerland',
+    img: 'http://paperlief.com/images/jungfrau-mountain-switzerland-wallpaper-4.jpg',
+  },
+];
+
+ReactDOM.render(<CitiesSlider slides={slides} />, document.querySelector('#app'));
+</script>
+<body>
+  <div id="app"></div>
+<a href="https://aniruthkasthuri.github.io" target="_blank" class="icon-link">
+  <img src="http://icons.iconarchive.com/icons/graphicloads/100-flat/256/home-icon.png">
+</a>
+    </body>
+</html>
