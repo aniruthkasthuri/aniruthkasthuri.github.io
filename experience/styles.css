@@ -5,6 +5,17 @@ body {
   max-width:50000%;
 }
 
+.icon-link {
+  z-index: 100;
+  position: absolute;
+  left: 5px;
+  bottom: 5px;
+  width: 32px;
+}
+.icon-link img {
+  width: 100%;
+  vertical-align: top;
+}
 .timeline {
   display: flex;
   background-color: #031625;
