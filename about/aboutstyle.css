@@ -425,7 +425,9 @@ nav a:hover::before {
   }
 }
 
-
+.globe:hover{
+  border: 1vmin solid #0000ff;
+}
 .col-sm-3 img{
   width: 40%;
   margin-bottom: 10%;
