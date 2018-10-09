@@ -133,6 +133,9 @@ function plusDivs(n) {
 
 function showDivs(n) {
   console.log(n);
+  if (n == -1){
+     n = 2;
+  }
     if ((n%3) == 2){
       var x = document.getElementsByClassName("tl-year");
       x[0].innerHTML = "YEEE";
