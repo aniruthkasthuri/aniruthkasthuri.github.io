@@ -51,7 +51,7 @@ Tutorial based on https://www.youtube.com/watch?v=FEmysQARWFU ****/
 
 header{
   margin-top: 0;
-  background: #e8e4c2;
+  /*background: #e8e4c2;*/
 }
 
 header::after{
