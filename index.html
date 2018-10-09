@@ -14,11 +14,12 @@
     </style>
       <script type="text/javascript">
      function changeImg(imgNumber) {
-        var images = ['paris.jpg','vint.jpg','bel.png','pari.jpg'];
+        var images = ['paris.jpg'];
         var newImgNumber =Math.floor(Math.random()*images.length);
         document.body.style.background = 'url('+images[newImgNumber]+')';
         document.body.style.backgroundRepeat = 'no-repeat';
         document.body.style.backgroundSize = 'cover';
+        document.body.style.background-size = 200px 200px
    };
    window.onload=changeImg;
   </script>
