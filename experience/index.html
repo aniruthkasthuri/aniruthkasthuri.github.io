@@ -133,7 +133,7 @@ function plusDivs(n) {
 
 function showDivs(n) {
   console.log(n);
-    if (n == 2){
+    if ((n%3) == 2){
       var x = document.getElementsByClassName("tl-year");
       x[0].innerHTML = "YEEE";
       x[0].style.fontSize = "1.728rem";
@@ -148,15 +148,76 @@ function showDivs(n) {
 
       
     }
-    if (n == 3){
-      var x = document.getElementsByClassName("tl-year");
-      x[0].innerHTML = "2011";
+    if ((n%3) == 0){
+     var x = document.getElementsByClassName("tl-year");
+      x[0].innerHTML = "N/A";
       x[0].style.fontSize = "1.728rem";
       x[0].style.lineHeight = "2";
-      x[1].innerHTML = "26333";
+      x[1].innerHTML = "N/A";
       x[1].style.fontSize = "1.728rem";
       x[1].style.lineHeight = "2";
+      x[2].innerHTML = "N/A";
+      x[2].style.fontSize = "1.728rem";
+      x[2].style.lineHeight = "2";
+      x[3].innerHTML = "N/A";
+      x[3].style.fontSize = "1.728rem";
+      x[3].style.lineHeight = "2";
+      x[4].innerHTML = "N/A";
+      x[4].style.fontSize = "1.728rem";
+      x[4].style.lineHeight = "2";
+      x[5].innerHTML = "N/A";
+      x[5].style.fontSize = "1.728rem";
+      x[5].style.lineHeight = "2";
+      
+      var y = document.getElementsByClassName("f3 text--accent ttu");
+      y[0].innerHTML = "TEXAS SCOTTISH RITE HOSPITAL FOR CHILDREN";
+      y[1].innerHTML = "HOSPITAL VOLUNTEER";
+      y[2].innerHTML = "PEROT MUSEUM OF NATURE AND SCIENCE";
+      y[3].innerHTML = "MUSEUM VOLUNTEER";
+      y[4].innerHTML = "TEEN LEADERSHIP COPPELL";
+      y[5].innerHTML = "LEADERSHIP TEAM MEMBER";
+      y[6].innerHTML = "DALLAS EAR INSTITUTE";
+      y[7].innerHTML = "SHADOWING SURGERY";
+      y[8].innerHTML = "RUMBAUGH-GOODWIN INSTITUTE";
+      y[9].innerHTML = "RESEARCH INTERN";
+      y[10].innerHTML = "UT SOUTHWESTERN";
+      y[11].innerHTML = "RESEARCH INTERN";
     }
+    if ((n%3) == 1){
+      var x = document.getElementsByClassName("tl-year");
+      x[0].innerHTML = "2014/15";
+      x[0].style.fontSize = "1.728rem";
+      x[0].style.lineHeight = "2";
+      x[1].innerHTML = "2015";
+      x[1].style.fontSize = "1.728rem";
+      x[1].style.lineHeight = "2";
+      x[2].innerHTML = "2015/16";
+      x[2].style.fontSize = "1.728rem";
+      x[2].style.lineHeight = "2";
+      x[3].innerHTML = "2016";
+      x[3].style.fontSize = "1.728rem";
+      x[3].style.lineHeight = "2";
+      x[4].innerHTML = "2016";
+      x[4].style.fontSize = "1.728rem";
+      x[4].style.lineHeight = "2";
+      x[5].innerHTML = "2016";
+      x[5].style.fontSize = "1.728rem";
+      x[5].style.lineHeight = "2";
+      
+      var y = document.getElementsByClassName("f3 text--accent ttu");
+      y[0].innerHTML = "TEXAS SCOTTISH RITE HOSPITAL FOR CHILDREN";
+      y[1].innerHTML = "HOSPITAL VOLUNTEER";
+      y[2].innerHTML = "PEROT MUSEUM OF NATURE AND SCIENCE";
+      y[3].innerHTML = "MUSEUM VOLUNTEER";
+      y[4].innerHTML = "TEEN LEADERSHIP COPPELL";
+      y[5].innerHTML = "LEADERSHIP TEAM MEMBER";
+      y[6].innerHTML = "DALLAS EAR INSTITUTE";
+      y[7].innerHTML = "SHADOWING SURGERY";
+      y[8].innerHTML = "RUMBAUGH-GOODWIN INSTITUTE";
+      y[9].innerHTML = "RESEARCH INTERN";
+      y[10].innerHTML = "UT SOUTHWESTERN";
+      y[11].innerHTML = "RESEARCH INTERN";
+    }  
 }
 </script>
 
