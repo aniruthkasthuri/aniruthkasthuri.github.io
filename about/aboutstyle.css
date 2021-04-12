@@ -124,7 +124,7 @@ hr {
 .sec-main {
   position: relative;
   height: 560px;
-  background: url("./88.jpg") no-repeat center center;
+  background: url("88.jpg") no-repeat center center;
   background-size: cover;
 }
 .sec-main:after {
